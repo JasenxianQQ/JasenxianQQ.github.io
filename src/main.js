@@ -1,9 +1,11 @@
+// src/main.js
 import "./index.less";
-import * as THREE from "three";
-import VRHall from "./VRHall";
-import { data } from "./models2";
+import * as THREE from "/node_modules/three/build/three.module.js";
+import { VRHall } from "./vrhall/VRHall.js";
+import { data } from "./models2.js";
 import Zoomtastic from "zoomtastic";
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+
 
 window.onload = function () {
     const vr = new VRHall({

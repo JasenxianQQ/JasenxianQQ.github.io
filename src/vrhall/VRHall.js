@@ -1,11 +1,11 @@
-import * as THREE from "three";
-import CameraControls from "camera-controls";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { TransformControls } from "three/examples/jsm/controls/TransformControls";
+import * as THREE from "@three/build/three.module.js";
+import CameraControls from "@controls/dist/camera-controls.module.js";
+import { GLTFLoader } from "@three/examples/jsm/loaders/GLTFLoader.js";
+import { TransformControls } from "@three/examples/jsm/controls/TransformControls.js";
 import { Reflector } from "./Reflector";
 import offset from "offset";
 import Gravity from "./Gravity";
-import { VRButton } from "three/examples/jsm/webxr/VRButton.js";
+import { VRButton } from "@three/examples/jsm/webxr/VRButton.js";
 
 CameraControls.install({ THREE: THREE });
 
