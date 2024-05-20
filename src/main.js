@@ -1,5 +1,5 @@
 import "./index.less";
-import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from '@three/build/three.module.js';
 import { VRHall } from './vrhall/VRHall.js';
 import { data } from './models2.js';
 import Zoomtastic from 'zoomtastic';
