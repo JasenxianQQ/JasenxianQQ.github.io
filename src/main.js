@@ -1,10 +1,12 @@
-// src/main.js
-import "./index.less";
-import * as THREE from '/JasenxianQQ.github.io/node_modules/three/build/three.module.js';
-import { VRHall } from "./vrhall/VRHall.js";
-import { data } from "./models2.js";
-import Zoomtastic from '/JasenxianQQ.github.io/node_modules/zoomtastic/dist/zoomtastic.es.js';
-import { GLTFLoader } from '/JasenxianQQ.github.io/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from '@three/build/three.module.js';
+import { VRHall } from './vrhall/VRHall.js';
+import { data } from './models2.js';
+import Zoomtastic from 'zoomtastic';
+import { GLTFLoader } from '@three/examples/jsm/loaders/GLTFLoader.js';
+
+// 你的其他代码...
+
+
 
 window.onload = function () {
     const vr = new VRHall({
@@ -104,6 +106,7 @@ window.onload = function () {
         infoBox.style.top = `${y + 10}px`;
         infoBox.style.display = 'block';
 
+        // 设置1秒后消失
         setTimeout(() => {
             infoBox.style.display = 'none';
         }, 1000);
