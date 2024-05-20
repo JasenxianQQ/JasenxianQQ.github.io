@@ -41,7 +41,7 @@
       width: 50px;
       height: 50px;
       border: none;
-      background: url('./rotate-icon.png') no-repeat center center;
+      background: url('/rotate-icon.png') no-repeat center center; /* 使用 public 目录中的文件 */
       background-size: cover;
       opacity: 0.5;
       cursor: pointer;
@@ -57,10 +57,9 @@
       pointer-events: none;
     }
   </style>
-  <!-- 引入 TensorFlow.js 和 BodyPix -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix"></script>
-  <script type="module" crossorigin src="/assets/index-8e1688cc.js"></script>
+  <script type="module" crossorigin src="/assets/index-781a89ce.js"></script>
   <link rel="stylesheet" href="/assets/index-831e94fc.css">
 </head>
 <body>
@@ -71,7 +70,6 @@
   <button id="captureButton" class="button">拍照</button>
   <button id="togglePredictButton" class="button">开启合照</button>
   <button id="fullscreenButton" class="button"></button>
-  <!-- 引入主JavaScript文件 -->
   
 </body>
 </html>
