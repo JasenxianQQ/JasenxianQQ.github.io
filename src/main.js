@@ -6,7 +6,6 @@ import { data } from './models2.js';
 import Zoomtastic from 'zoomtastic';
 import { GLTFLoader } from '@three/examples/jsm/loaders/GLTFLoader.js';
 
-
 window.onload = function () {
     const vr = new VRHall({
         debugger: false,
