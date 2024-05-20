@@ -1,9 +1,9 @@
-import "./index.less";
+//import "./index.less";
 import * as THREE from '@three/build/three.module.js';
 import { VRHall } from './vrhall/VRHall.js';
 import { data } from './models2.js';
 import Zoomtastic from 'zoomtastic';
-import { GLTFLoader } from '@three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '@examples/loaders/GLTFLoader.js';
 
 // 你的其他代码...
 

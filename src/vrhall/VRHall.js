@@ -1,8 +1,8 @@
 import * as THREE from '@three/build/three.module.js';
 import CameraControls from '@controls/dist/camera-controls.module.js';
-import { GLTFLoader } from '@three/examples/jsm/loaders/GLTFLoader.js';
-import { TransformControls } from '@three/examples/jsm/controls/TransformControls.js';
-import { VRButton } from '@three/examples/jsm/webxr/VRButton.js';
+import { GLTFLoader } from '@examples/loaders/GLTFLoader.js';
+import { TransformControls } from '@examples/controls/TransformControls.js';
+import { VRButton } from '@examples/webxr/VRButton.js';
 import { Reflector } from './Reflector';
 import offset from 'offset';
 import Gravity from './Gravity';
