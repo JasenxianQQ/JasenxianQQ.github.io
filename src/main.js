@@ -1,10 +1,11 @@
-// src/main.js
 import "./index.less";
 import * as THREE from '@three/build/three.module.js';
 import { VRHall } from './vrhall/VRHall.js';
 import { data } from './models2.js';
 import Zoomtastic from 'zoomtastic';
 import { GLTFLoader } from '@three/examples/jsm/loaders/GLTFLoader.js';
+
+// 你的其他代码...
 
 window.onload = function () {
     const vr = new VRHall({
@@ -13,8 +14,8 @@ window.onload = function () {
         movieHight: 2,
         container: document.getElementById("root"),
         cameraOption: {
-            position: { x: 0, y: 2, z: 0.699 },
-            lookAt: { x: 5, y: 1, z: 1.096 },
+            position: { x: 39.64879754391727, y: 4.3, z: 17.696492789786188 },
+            lookAt: { x: 39.648758431514246, y: 4.3, z: 17.69646168714511 },
         },
         onClick: (item) => {
             if (item.desc) {
@@ -31,7 +32,7 @@ window.onload = function () {
     setupCamera();
 
     vr.loadHall({
-        url: "./assets/room2/dm.glb",
+        url: "/assets/room2/dm.glb",
         planeName: "dm",
         position: { x: 0, y: 0, z: 0 },
         scale: 5,
@@ -41,7 +42,7 @@ window.onload = function () {
     });
 
     vr.loadGLTF({
-        url: "./assets/robot/robot1.glb",
+        url: "/assets/robot/robot1.glb",
         position: { x: 0, y: 0, z: 0 },
         rotation: { x: 0, y: 0, z: 0 },
         scale: 5,
