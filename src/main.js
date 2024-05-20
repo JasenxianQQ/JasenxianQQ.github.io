@@ -1,11 +1,10 @@
 // src/main.js
 import "./index.less";
-import * as THREE from "/node_modules/three/build/three.module.js";
+import * as THREE from '/node_modules/three/build/three.module.js';
 import { VRHall } from "./vrhall/VRHall.js";
 import { data } from "./models2.js";
-import Zoomtastic from "zoomtastic";
+import Zoomtastic from '/node_modules/zoomtastic/dist/zoomtastic.es.js';
 import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-
 
 window.onload = function () {
     const vr = new VRHall({
@@ -14,8 +13,8 @@ window.onload = function () {
         movieHight: 2,
         container: document.getElementById("root"),
         cameraOption: {
-            position: { x: 0, y: 2, z: 0.699 },
-            lookAt: { x: 5, y: 1, z: 1.096 },
+            position: { x: 39.64879754391727, y: 4.3, z: 17.696492789786188 },
+            lookAt: { x: 39.648758431514246, y: 4.3, z: 17.69646168714511 },
         },
         onClick: (item) => {
             if (item.desc) {
