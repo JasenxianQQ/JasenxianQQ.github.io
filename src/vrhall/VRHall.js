@@ -1,4 +1,4 @@
-import * as THREE from '@three/build/three.module.js';
+import * as THREE from '../node_modules/three/build/three.module.js';
 import CameraControls from '@controls/dist/camera-controls.module.js';
 import { GLTFLoader } from '@three/examples/jsm/loaders/GLTFLoader.js';
 import { TransformControls } from '@three/examples/jsm/controls/TransformControls.js';
