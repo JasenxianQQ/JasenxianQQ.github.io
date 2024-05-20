@@ -13,8 +13,8 @@ window.onload = function () {
         movieHight: 2,
         container: document.getElementById("root"),
         cameraOption: {
-            position: { x: 0, y: 2, z: 0.699 },
-            lookAt: { x: 5, y: 1, z: 1.096 },
+            position: { x: 39.64879754391727, y: 4.3, z: 17.696492789786188 },
+            lookAt: { x: 39.648758431514246, y: 4.3, z: 17.69646168714511 },
         },
         onClick: (item) => {
             if (item.desc) {
@@ -31,7 +31,7 @@ window.onload = function () {
     setupCamera();
 
     vr.loadHall({
-        url: "./assets/room2/dm.glb",
+        url: "/assets/room2/dm.glb", // 确保路径从根目录开始
         planeName: "dm",
         position: { x: 0, y: 0, z: 0 },
         scale: 5,
@@ -41,7 +41,7 @@ window.onload = function () {
     });
 
     vr.loadGLTF({
-        url: "./assets/robot/robot1.glb",
+        url: "/assets/robot/robot1.glb", // 确保路径从根目录开始
         position: { x: 0, y: 0, z: 0 },
         rotation: { x: 0, y: 0, z: 0 },
         scale: 5,
