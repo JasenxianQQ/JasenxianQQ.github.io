@@ -11,13 +11,12 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: [
-        '@three/build/three.module.js',
-        '@controls/dist/camera-controls.module.js',
-        '@examples/loaders/GLTFLoader.js',
-        '@examples/controls/TransformControls.js',
-        '@examples/webxr/VRButton.js'
-      ]
+      input: {
+        main: path.resolve(__dirname, 'index.html')
+      }
     }
+  },
+  server: {
+    host: true
   }
 });
