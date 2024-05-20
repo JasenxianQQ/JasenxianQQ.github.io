@@ -1,10 +1,10 @@
 // src/main.js
 import "./index.less";
-import * as THREE from '/node_modules/three/build/three.module.js';
+import * as THREE from '/JasenxianQQ.github.io/node_modules/three/build/three.module.js';
 import { VRHall } from "./vrhall/VRHall.js";
 import { data } from "./models2.js";
-import Zoomtastic from '/node_modules/zoomtastic/dist/zoomtastic.es.js';
-import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import Zoomtastic from '/JasenxianQQ.github.io/node_modules/zoomtastic/dist/zoomtastic.es.js';
+import { GLTFLoader } from '/JasenxianQQ.github.io/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 window.onload = function () {
     const vr = new VRHall({
@@ -31,7 +31,7 @@ window.onload = function () {
     setupCamera();
 
     vr.loadHall({
-        url: "/assets/room2/dm.glb", // 确保路径从根目录开始
+        url: "./assets/room2/dm.glb",
         planeName: "dm",
         position: { x: 0, y: 0, z: 0 },
         scale: 5,
@@ -41,7 +41,7 @@ window.onload = function () {
     });
 
     vr.loadGLTF({
-        url: "/assets/robot/robot1.glb", // 确保路径从根目录开始
+        url: "./assets/robot/robot1.glb",
         position: { x: 0, y: 0, z: 0 },
         rotation: { x: 0, y: 0, z: 0 },
         scale: 5,
@@ -104,7 +104,6 @@ window.onload = function () {
         infoBox.style.top = `${y + 10}px`;
         infoBox.style.display = 'block';
 
-        // 设置1秒后消失
         setTimeout(() => {
             infoBox.style.display = 'none';
         }, 1000);
