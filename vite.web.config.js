@@ -1,9 +1,9 @@
+// vite.web.config.js
 import { defineConfig } from "vite";
 import path from "path";
 import vitePluginImp from "vite-plugin-imp";
 const resolve = (url) => path.resolve(__dirname, url);
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vitePluginImp({
@@ -22,14 +22,12 @@ export default defineConfig({
     },
     preprocessorOptions: {
       less: {
-        // 支持内联 javascript
         javascriptEnabled: true,
       },
     },
   },
-  // 入口
   build: {
-    outDir: "www",
+    outDir: "dist", // 确保输出目录为 dist
     rollupOptions: {
       input: {
         main: resolve("index.html"),
@@ -38,11 +36,10 @@ export default defineConfig({
     minify: "terser",
     terserOptions: {
       compress: {
-        //生产环境时移除console
         drop_console: true,
         drop_debugger: true,
       },
     },
   },
-  base: "/", // 公共基础路径
+  base: "/", // 顶级用户或组织页面的基础路径
 });
